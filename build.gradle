@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'calculator.automation.softvision'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+test {
+    useTestNG()
+}
+
+dependencies {
+    //testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'io.appium', name: 'java-client', version: '7.1.0'
+    testCompile group: 'org.testng', name: 'testng', version: '7.0.0'
+    testCompile group: 'org.webjars.npm', name: 'chai', version: '4.1.2'
+
+
+}
